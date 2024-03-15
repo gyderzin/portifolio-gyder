@@ -57,7 +57,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-lg-5 col-md-12 colTecs">
+                            <div class="col-12 col-lg-6 col-md-12 colTecs">
                                 <div class="row align-items-center h-100">
                                     <v-carousel show-arrows="hover" class="img-fluid h-100" cycle hide-delimiters
                                         interval="4000">

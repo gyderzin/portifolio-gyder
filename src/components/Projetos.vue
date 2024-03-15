@@ -30,7 +30,7 @@
                             <ModeloProjetoVue :darkMode="darkMode" :projetos="projetosFullStack"> </ModeloProjetoVue>
                         </v-window-item>
                         <v-window-item value="2">
-                            <ModeloProjetoVue :darkMode="darkMode" :projetos="projetosFullStack"> </ModeloProjetoVue>
+                            <ModeloProjetoVue :darkMode="darkMode" :projetos="projetosFrontEnd"> </ModeloProjetoVue>
                         </v-window-item>
                         <v-window-item value="3">
                             <ModeloProjetoVue :darkMode="darkMode" :projetos="projetosFullStack"> </ModeloProjetoVue>
@@ -82,33 +82,98 @@ export default {
             tab: null,
             projetosFullStack: [
                 {
-                    tab: '1', nome: 'fodase.com',
+                    tab: '1', nome: 'Finans App',
                     descriçao: [
-                        'O finans é um site completo de finança pessoal, onde o usuário pode ter controle total de sua vida finançeira.',
-                        'O projeto foi desenvolvido para por em prática os meus conhecimentos de programaçao full-stack. Ele foi desenvolvido em Vue JS, como uma SPA, consumindo uma API desenvolvida em PHP com Slim Framework.',
-                        'O finans conta com um sistema de autenticaçao, criaçao de conta, envio de emails, configuraçao de primeiro acesso, registro de despesas fixas e avulsas, emissao de relatórios mensais, e muitos mais. '
+                        'O Finans é um site completo de finanças pessoais, onde o usuário pode ter controle total de sua vida financeira. O projeto foi desenvolvido para colocar em prática meus conhecimentos de programação full-stack.',
+                        'Foi desenvolvido em Vue JS, utilizando VueRouter para o gerenciamento de rotas, Vuex para o gerenciamento de estados, Vuetify para estilização e Axios para requisições HTTP. Foi criado como uma SPA (Single Page Application), consumindo uma API desenvolvida em PHP com o Slim Framework, fazendo o CRUD em um banco de dados MySQL',
+                        'O Finans conta com um sistema de autenticação, criação de conta, envio de e-mails, configuração de primeiro acesso, registro de despesas fixas e avulsas, emissão de relatórios mensais, e muito mais. Crie uma conta para testar o app.',                        
                     ],
                     imagens: [
-                        '/assets/fotosProjetos/image.png',                        
+                        '/assets/fotosProjetos/finans/foto1.png',         
+                        '/assets/fotosProjetos/finans/foto2.png',         
+                        '/assets/fotosProjetos/finans/foto3.png',         
+                        '/assets/fotosProjetos/finans/foto4.png',         
+                        '/assets/fotosProjetos/finans/foto5.png',         
+                        '/assets/fotosProjetos/finans/foto6.png',         
+                        '/assets/fotosProjetos/finans/foto7.png',         
+                        '/assets/fotosProjetos/finans/foto8.png',         
+                        '/assets/fotosProjetos/finans/foto9.png',         
+                        '/assets/fotosProjetos/finans/foto10.png',         
+                        '/assets/fotosProjetos/finans/foto11.png',         
+                        '/assets/fotosProjetos/finans/foto12.png',         
+                        '/assets/fotosProjetos/finans/foto13.png',         
+                        '/assets/fotosProjetos/finans/foto14.png',         
                     ], links: [
-                        'https://github.com/gyderzin',
-                        'https://github.com/gyderzin'
+                        'https://github.com/gyderzin/Finans',
+                        'https://finans-94h9hbqwy-gyderzins-projects.vercel.app'
                     ]
                 },
                 {
-                    tab: '2', nome: 'fodase.com2', descriçao: [
-                        'O finans é um site completo de finança pessoal, onde o usuário pode ter controle total de sua vida finançeira.',
-                        'O projeto foi desenvolvido para por em prática os meus conhecimentos de programaçao full-stack. Ele foi desenvolvido em Vue JS, como uma SPA, consumindo uma API desenvolvida em PHP com Slim Framework.',
-                        'O finans conta com um sistema de autenticaçao, criaçao de conta, envio de emails, configuraçao de primeiro acesso, registro de despesas fixas e avulsas, emissao de relatórios mensais, e muitos mais. '
+                    tab: '2', nome: 'Almoxarifado NSG', descriçao: [
+                        'Este é um projeto realizado para uma empresa na qual trabalhei como Jovem Aprendiz, visando atender as demandas do almoxarifado.',
+                        'O sistema foi desenvolvido após identificar as falhas no sistema utilizado pela empresa na época e apresentar uma solução mais eficiente aos meus superiores.',
+                        'O mesmo engloba funções de entrada e saída de materiais e ferramentas, histórico, cadastro de funcionários, controle de ferramentas pendentes de devolução, entre outros recursos.',
+                        'O sistema foi desenvolvido com PHP, seguindo o padrão de arquitetura MVC, e utilizando HTML, CSS e JavaScript.',
+                        'Para deploy, entre com o email gyderlanmos@gmail.com, e a senha 13579.'
                     ], imagens: [
-                        '/assets/fotoGyder-dark.png',
-                        '/assets/logoLight.png',
-                        '/assets/logoLight.png',
+                        '/assets/fotosProjetos/almoxarifado_nsg/foto1.png',
+                        '/assets/fotosProjetos/almoxarifado_nsg/foto2.png',
+                        '/assets/fotosProjetos/almoxarifado_nsg/foto3.png',
+                        '/assets/fotosProjetos/almoxarifado_nsg/foto4.png',
+                        '/assets/fotosProjetos/almoxarifado_nsg/foto5.png',
+                        '/assets/fotosProjetos/almoxarifado_nsg/foto6.png',
+                        '/assets/fotosProjetos/almoxarifado_nsg/foto7.png',
+                        '/assets/fotosProjetos/almoxarifado_nsg/foto8.png',
                     ], links: [
-                        'https://github.com/gyderzin',
-                        'https://github.com/gyderzin'
+                        'https://github.com/gyderzin/almoxarifado_nsg',
+                        ''
                     ]
                 }
+            ],
+            projetosFrontEnd: [
+            {
+                    tab: '1', nome: 'Spotify Clone',
+                    descriçao: [
+                        'Projeto desenvolvido para praticar meus conhecimentos de Front-End e WebDesigner, onde criei um clone do site do Spotify. O projeto foi desenvolvido usando HTML, CSS e Bootstrap.'
+                    ],
+                    imagens: [
+                        '/assets/fotosProjetos/spotify/foto1.png',
+                        '/assets/fotosProjetos/spotify/foto2.png',
+                        '/assets/fotosProjetos/spotify/foto3.png',
+                    ], links: [
+                        'https://github.com/gyderzin/Spotify-Clone',
+                        'https://gyderzin.github.io/Spotify-Clone/'
+                    ]
+            },
+            {
+                    tab: '1', nome: 'Finans Apresentation',
+                    descriçao: [
+                        'Projeto desenvolvido para servir de página de apresentação para o sistema Finans que foi demostrado na seção de FullStack. O mesmo foi desenvolvido com HTML CSS e bootstrap'
+                    ],
+                    imagens: [
+                        '/assets/fotosProjetos/finans_apresentation/foto1.png',
+                        '/assets/fotosProjetos/finans_apresentation/foto2.png',
+                        '/assets/fotosProjetos/finans_apresentation/foto3.png',
+                        '/assets/fotosProjetos/finans_apresentation/foto4.png',
+                    ], links: [
+                        'https://github.com/gyderzin/FinansApresentation',
+                        'https://gyderzin.github.io/FinansApresentation/'
+                    ]
+            },
+            {
+                    tab: '1', nome: 'App orçamento pessoal',
+                    descriçao: [
+                        'Projeto desenvolvido para praticar os meus conhecimentos de JavaScript e lógica de programação. O sistema permite que o usário cadastre despesas por categorias e consultar as mesmas, fazendo a persistência de informações através do localStorage.'
+                    ],
+                    imagens: [
+                        '/assets/fotosProjetos/orçamento_pessoal/foto1.png',
+                        '/assets/fotosProjetos/orçamento_pessoal/foto2.png',
+                        '/assets/fotosProjetos/orçamento_pessoal/foto3.png',                        
+                    ], links: [
+                        'https://github.com/gyderzin/OrcamentoPessoal',
+                        'https://gyderzin.github.io/OrcamentoPessoal/'
+                    ]
+            },
             ]
         }
     },

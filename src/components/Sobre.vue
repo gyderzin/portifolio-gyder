@@ -13,19 +13,19 @@
                 <div
                     class="col-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 avatarLG justify-content-center colAvatar">
                     <v-avatar class="avatarLG" size="450" color="#F25D50">
-                        <v-img alt="John" src="/assets/fotoSemBg.png"></v-img>
+                        <v-img alt="John" src="/assets/pages/fotoSemBg.png"></v-img>
                     </v-avatar>
                 </div>
                 <div
                     class="col-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 avatarMD justify-content-center colAvatar">
                     <v-avatar class="avatarLG" size="300" color="#F25D50">
-                        <v-img alt="John" src="/assets/fotoSemBg.png"></v-img>
+                        <v-img alt="John" src="/assets/pages/fotoSemBg.png"></v-img>
                     </v-avatar>
                 </div>
                 <div
                     class="col-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 avatarSM justify-content-center colAvatar">
                     <v-avatar class="avatarLG" size="150" color="#F25D50">
-                        <v-img alt="John" src="/assets/fotoSemBg.png"></v-img>
+                        <v-img alt="John" src="/assets/pages/fotoSemBg.png"></v-img>
                     </v-avatar>
                 </div>
 

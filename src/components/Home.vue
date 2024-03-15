@@ -136,17 +136,17 @@ export default {
         },
         changeMode(mode) {
             if (mode == 'dark') {
-                this.logo = '/assets/logoLight.png'
+                this.logo = '/assets/pages/logoLight.png'
                 this.styleIconeGit = 'color: #F2F2F2;'
                 this.styleIconeLinke = 'color: #F2F2F2;'
                 this.styleIconeWpp = 'color: #F2F2F2;'
-                this.fotoGyder = '/assets/fotoGyder-dark.png'
+                this.fotoGyder = '/assets/pages/fotoGyder-dark.png'
             } else if (mode == 'light') {
-                this.logo = '/assets/logoDark.png'
+                this.logo = '/assets/pages/logoDark.png'
                 this.styleIconeGit = 'color: #222121;'
                 this.styleIconeLinke = 'color: #222121;'
                 this.styleIconeWpp = 'color: #222121;'
-                this.fotoGyder = '/assets/fotoGyder-light.png'
+                this.fotoGyder = '/assets/pages/fotoGyder-light.png'
             }
         },
     }
