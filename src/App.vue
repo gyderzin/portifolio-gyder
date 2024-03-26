@@ -7,6 +7,8 @@
         :darkMode="darkMode" :bgClass="bgClass1" :colorText="colorText"></projetos>
     <Sobre :setControleScroller="setControle" :atualizarHash="atualizarHash" :animatePage="animatePage"
         :darkMode="darkMode" :bgClass="bgClass2" :colorText="colorText"></Sobre>
+    <Contato :setControleScroller="setControle" :atualizarHash="atualizarHash" :animatePage="animatePage"
+        :darkMode="darkMode" :bgClass="bgClass1" :colorText="colorText"> </Contato>
 </template>
 
 <script>
@@ -14,9 +16,10 @@ import Home from './components/Home.vue';
 import Tecnologias from './components/Tecnologias.vue';
 import Projetos from './components/Projetos.vue';
 import Sobre from './components/Sobre.vue';
+import Contato from './components/Contato.vue';
 
 export default {
-    components: { Home, Tecnologias, Projetos, Sobre },
+    components: { Home, Tecnologias, Projetos, Sobre, Contato },
     created() {
         if (localStorage.getItem('darkMode') !== null) {
             var darkMode = localStorage.getItem('darkMode')
@@ -81,6 +84,7 @@ export default {
                 elements[2] = 'tecnologias'
                 elements[3] = 'projetos'
                 elements[4] = 'sobre'
+                elements[5] = 'contato'
                 this.$router.beforeEach((to, from) => {
                     let fromNumber = this.tranformarRotaNumber(to.hash)
                     let toNumber = this.tranformarRotaNumber(from.hash)
@@ -136,6 +140,7 @@ export default {
                 case '#tecnologias': retorno = 2; break;
                 case '#projetos': retorno = 3; break;
                 case '#sobre': retorno = 4; break;
+                case '#contato': retorno = 5; break;
             }
             return retorno
         }

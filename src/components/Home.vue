@@ -30,6 +30,9 @@
                                     <li class="nav-item jost">
                                         <a :class="'nav-link ' + colorText" @click="changeHash('#sobre')">Sobre</a>
                                     </li>
+                                    <li class="nav-item jost">
+                                        <a :class="'nav-link ' + colorText" @click="changeHash('#contato')">Contato</a>
+                                    </li>
                                     <li class="nav-item mt-2">
                                         <div class="form-check form-switch">
                                             <input class="form-check-input" type="checkbox" role="switch"
