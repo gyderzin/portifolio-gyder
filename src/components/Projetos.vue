@@ -22,7 +22,6 @@
                         show-arrows>
                         <v-tab class="jost" value="1">Full Stack</v-tab>
                         <v-tab class="jost" value="2">Front-End</v-tab>
-                        <v-tab class="jost" value="3">Back-End</v-tab>
                         <v-tab class="jost" value="4">Mobile</v-tab>
                     </v-tabs>
                     <v-window v-model="tab">
@@ -32,11 +31,8 @@
                         <v-window-item value="2">
                             <ModeloProjetoVue :darkMode="darkMode" :projetos="projetosFrontEnd"> </ModeloProjetoVue>
                         </v-window-item>
-                        <v-window-item value="3">
-                            <ModeloProjetoVue :darkMode="darkMode" :projetos="projetosFullStack"> </ModeloProjetoVue>
-                        </v-window-item>
                         <v-window-item value="4">
-                            <ModeloProjetoVue :darkMode="darkMode" :projetos="projetosFullStack"> </ModeloProjetoVue>
+                            <ModeloProjetoVue :darkMode="darkMode" :projetos="projetosMobile"> </ModeloProjetoVue>
                         </v-window-item>
                     </v-window>
                 </div>
@@ -86,26 +82,26 @@ export default {
                     descriçao: [
                         'O Finans é um site completo de finanças pessoais, onde o usuário pode ter controle total de sua vida financeira. O projeto foi desenvolvido para colocar em prática meus conhecimentos de programação full-stack.',
                         'Foi desenvolvido em Vue JS, utilizando VueRouter para o gerenciamento de rotas, Vuex para o gerenciamento de estados, Vuetify para estilização e Axios para requisições HTTP. Foi criado como uma SPA (Single Page Application), consumindo uma API desenvolvida em PHP com o Slim Framework, fazendo o CRUD em um banco de dados MySQL',
-                        'O Finans conta com um sistema de autenticação, criação de conta, envio de e-mails, configuração de primeiro acesso, registro de despesas fixas e avulsas, emissão de relatórios mensais, e muito mais. Crie uma conta para testar o app.',                        
+                        'O Finans conta com um sistema de autenticação, criação de conta, envio de e-mails, configuração de primeiro acesso, registro de despesas fixas e avulsas, emissão de relatórios mensais, e muito mais. Crie uma conta para testar o app.',
                     ],
                     imagens: [
-                        '/assets/fotosProjetos/finans/foto1.png',         
-                        '/assets/fotosProjetos/finans/foto2.png',         
-                        '/assets/fotosProjetos/finans/foto3.png',         
-                        '/assets/fotosProjetos/finans/foto4.png',         
-                        '/assets/fotosProjetos/finans/foto5.png',         
-                        '/assets/fotosProjetos/finans/foto6.png',         
-                        '/assets/fotosProjetos/finans/foto7.png',         
-                        '/assets/fotosProjetos/finans/foto8.png',         
-                        '/assets/fotosProjetos/finans/foto9.png',         
-                        '/assets/fotosProjetos/finans/foto10.png',         
-                        '/assets/fotosProjetos/finans/foto11.png',         
-                        '/assets/fotosProjetos/finans/foto12.png',         
-                        '/assets/fotosProjetos/finans/foto13.png',         
-                        '/assets/fotosProjetos/finans/foto14.png',         
+                        '/assets/fotosProjetos/finans/foto1.png',
+                        '/assets/fotosProjetos/finans/foto2.png',
+                        '/assets/fotosProjetos/finans/foto3.png',
+                        '/assets/fotosProjetos/finans/foto4.png',
+                        '/assets/fotosProjetos/finans/foto5.png',
+                        '/assets/fotosProjetos/finans/foto6.png',
+                        '/assets/fotosProjetos/finans/foto7.png',
+                        '/assets/fotosProjetos/finans/foto8.png',
+                        '/assets/fotosProjetos/finans/foto9.png',
+                        '/assets/fotosProjetos/finans/foto10.png',
+                        '/assets/fotosProjetos/finans/foto11.png',
+                        '/assets/fotosProjetos/finans/foto12.png',
+                        '/assets/fotosProjetos/finans/foto13.png',
+                        '/assets/fotosProjetos/finans/foto14.png',
                     ], links: [
                         'https://github.com/gyderzin/Finans',
-                        'https://finans-94h9hbqwy-gyderzins-projects.vercel.app'
+                        'https://finans-snowy.vercel.app'
                     ]
                 },
                 {
@@ -113,8 +109,7 @@ export default {
                         'Este é um projeto realizado para uma empresa na qual trabalhei como Jovem Aprendiz, visando atender as demandas do almoxarifado.',
                         'O sistema foi desenvolvido após identificar as falhas no sistema utilizado pela empresa na época e apresentar uma solução mais eficiente aos meus superiores.',
                         'O mesmo engloba funções de entrada e saída de materiais e ferramentas, histórico, cadastro de funcionários, controle de ferramentas pendentes de devolução, entre outros recursos.',
-                        'O sistema foi desenvolvido com PHP, seguindo o padrão de arquitetura MVC, e utilizando HTML, CSS e JavaScript.',
-                        'Para deploy, entre com o email gyderlanmos@gmail.com, e a senha 13579.'
+                        'O sistema foi desenvolvido com PHP, seguindo o padrão de arquitetura MVC, e utilizando HTML, CSS e JavaScript.',                       
                     ], imagens: [
                         '/assets/fotosProjetos/almoxarifado_nsg/foto1.png',
                         '/assets/fotosProjetos/almoxarifado_nsg/foto2.png',
@@ -125,13 +120,28 @@ export default {
                         '/assets/fotosProjetos/almoxarifado_nsg/foto7.png',
                         '/assets/fotosProjetos/almoxarifado_nsg/foto8.png',
                     ], links: [
-                        'https://github.com/gyderzin/almoxarifado_nsg',
-                        ''
+                        'https://github.com/gyderzin/almoxarifado_nsg',                        
                     ]
                 }
             ],
             projetosFrontEnd: [
-            {
+                {
+                    tab: '1', nome: 'Inserção de produtos',
+                    descriçao: [
+                        'Projeto desenvolvido como teste em um processo seletivo de estágio para a empresa Oak Tecnologia.',
+                        'O sistema tem como objetivo inserir novos produtos, e lista-los do menor valor para o maior, dando a possibilidade de editar ou excluir um produto. Utilizei o localStorage do navegador para a persitência de informações.'
+                    ],
+                    imagens: [
+                        '/assets/fotosProjetos/testeoak/foto1.png',
+                        '/assets/fotosProjetos/testeoak/foto2.png',
+                        '/assets/fotosProjetos/testeoak/foto3.png',
+                        '/assets/fotosProjetos/testeoak/foto4.png',
+                    ], links: [
+                        'https://github.com/gyderzin/TesteOak',
+                        'https://teste-oak.vercel.app'
+                    ]
+                },
+                {
                     tab: '1', nome: 'Spotify Clone',
                     descriçao: [
                         'Projeto desenvolvido para praticar meus conhecimentos de Front-End e WebDesigner, onde criei um clone do site do Spotify. O projeto foi desenvolvido usando HTML, CSS e Bootstrap.'
@@ -144,8 +154,8 @@ export default {
                         'https://github.com/gyderzin/Spotify-Clone',
                         'https://gyderzin.github.io/Spotify-Clone/'
                     ]
-            },
-            {
+                },
+                {
                     tab: '1', nome: 'Finans Apresentation',
                     descriçao: [
                         'Projeto desenvolvido para servir de página de apresentação para o sistema Finans que foi demostrado na seção de FullStack. O mesmo foi desenvolvido com HTML CSS e bootstrap'
@@ -159,8 +169,8 @@ export default {
                         'https://github.com/gyderzin/FinansApresentation',
                         'https://gyderzin.github.io/FinansApresentation/'
                     ]
-            },
-            {
+                },
+                {
                     tab: '1', nome: 'App orçamento pessoal',
                     descriçao: [
                         'Projeto desenvolvido para praticar os meus conhecimentos de JavaScript e lógica de programação. O sistema permite que o usário cadastre despesas por categorias e consultar as mesmas, fazendo a persistência de informações através do localStorage.'
@@ -168,12 +178,42 @@ export default {
                     imagens: [
                         '/assets/fotosProjetos/orçamento_pessoal/foto1.png',
                         '/assets/fotosProjetos/orçamento_pessoal/foto2.png',
-                        '/assets/fotosProjetos/orçamento_pessoal/foto3.png',                        
+                        '/assets/fotosProjetos/orçamento_pessoal/foto3.png',
                     ], links: [
                         'https://github.com/gyderzin/OrcamentoPessoal',
                         'https://gyderzin.github.io/OrcamentoPessoal/'
                     ]
-            },
+                },
+            ],
+            projetosMobile: [
+                {
+                    tab: '1', nome: 'Sistema de Automação Residencial',
+                    descriçao: [
+                        'Projeto desenvolvido como Trabalho de Conclusão de Curso para um curso técnico em eletrotécnica.',
+                        'O sistema tem como objetivo automatizar os circuitos e dispositivos eletrônicos de uma residência, oferecendo aos usuários uma interface simples na qual eles podem controlar a iluminação, tomadas, ar-condicionado, TV, etc.',
+                        'Para o funcionamento do sistema, foram desenvolvidos 3 softwares, utilizando diferentes linguagens.',
+                        'O primeiro foi uma API desenvolvida em PHP com o framework Slim para atender às necessidades do sistema, realizando operações de CRUD. O segundo foi um software para o microcontrolador ESP32, utilizando a linguagem C++, que tem a função de consumir a API para executar os comandos feitos pelo usuário. E o terceiro software foi o aplicativo, desenvolvido com o framework Flutter e a linguagem Dart, que tem como objetivo fornecer ao usuário uma interface onde ele pode realizar seus comandos.'
+                    ],
+                    imagens: [
+                        '/assets/fotosProjetos/appTM/foto1.png',
+                        '/assets/fotosProjetos/appTM/foto2.png',
+                        '/assets/fotosProjetos/appTM/foto3.png',
+                        '/assets/fotosProjetos/appTM/foto4.png',
+                        '/assets/fotosProjetos/appTM/foto5.png',
+                        '/assets/fotosProjetos/appTM/foto6.png',
+                        '/assets/fotosProjetos/appTM/foto7.png',
+                        '/assets/fotosProjetos/appTM/foto8.png',
+                        '/assets/fotosProjetos/appTM/foto9.png',
+                        '/assets/fotosProjetos/appTM/foto10.png',
+                        '/assets/fotosProjetos/appTM/foto11.png',
+                        '/assets/fotosProjetos/appTM/foto12.png',
+                        '/assets/fotosProjetos/appTM/foto13.png',
+                        '/assets/fotosProjetos/appTM/foto14.png',
+
+                    ], links: [
+                        'https://github.com/gyderzin/App-Thunder-Monkey',                        
+                    ]
+                }
             ]
         }
     },
